@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  templateUrl:'app.component.html'
 })
 export class AppComponent {
-  title = 'TemplateDrivenFormsAngular';
+  onSubmit(formData) {                                                       
+     console.log(formData);
+     console.log("first: " + formData.firstName);
+     console.log("password 1: " + formData.passwordsGroup.password);
+     
+    }
 }
+
+
